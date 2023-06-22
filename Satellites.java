@@ -6,13 +6,13 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 /**
- * The role of satellites is to send information to the reciever about where satellites are 
- * and what time they sent the information. The reciever uses the time difference between 
- * the signal being sent and being recieved to calculate its distance from each satellite. 
- * Since this is only a simulation, this class is given information about the vehicles 
+ * The role of satellites is to send information to the receiver about where satellites are 
+ * and what time they sent the information. The receiver uses the time difference between 
+ * the signal being sent and being received to calculate its distance from each satellite. 
+ * Since this is only a simulation, this class is given information about the vehicle's 
  * position at a given time. It then works backwards to calculate the time it would take
  * a signal to travel from each satellite above the horizon to the vehicle. This program 
- * sends the reciever the position of each satellite that is above the horizon and the time
+ * sends the receiver the position of each satellite that is above the horizon and the time
  * at which that satellite would have had to have sent the signal for it to reach the vehicle
  * at the desired time in the desired position. 
  */
