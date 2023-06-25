@@ -1,11 +1,11 @@
 # GPS Simulator
 GPS Simulator is a package of Java programs that simulate the calculations performed by a real GPS system to approximate a user's location. The package includes the following programs and files:
 
-Main: Handles the flow of data between Satellites and Receiver programs and serves as the entry point for the package.
-Satellites: Provides information about satellite positions and calculates necessary data for signal transmission.
-Receiver: Analyzes satellite information to approximate the user's location.
-Vehicle-Position.txt: Contains the actual location of the vehicle and receiver at a given time.
-Approximate-Position.txt: Displays the approximated location calculated by the Receiver program.
+* Main: Handles the flow of data between Satellites and Receiver programs and serves as the entry point for the package.
+* Satellites: Provides information about satellite positions and calculates necessary data for signal transmission.
+* Receiver: Analyzes satellite information to approximate the user's location.
+* Vehicle-Position.txt: Contains the actual location of the vehicle and receiver at a given time.
+* Approximate-Position.txt: Displays the approximated location calculated by the Receiver program.
 
 # Simulation Overview
 In a real GPS system, satellites orbiting the Earth send information to a receiver about their positions and the time at which they transmitted the signals. The receiver uses the time difference between signal transmission and reception to calculate its distance from each satellite and determine its own location. This simulation can't rely on the actual time difference between signals being sent and received. Instead, the Satellites program is given information about the vehicle's position at a specific time. Using this information, it reconstructs the data required by a receiver. True to a real GPS, the Receiver program does not know the vehicle's location. It approximates the vehicle's location using only the information sent by the Satellites program.
